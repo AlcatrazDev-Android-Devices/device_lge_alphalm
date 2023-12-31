@@ -10,7 +10,7 @@ DEVICE_PATH := device/lge/alphalm
 -include device/lge/sm8150-common/BoardConfigCommon.mk
 
 # Display
-TARGET_SCREEN_DENSITY := 401
+TARGET_SCREEN_DENSITY := 560
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/alphalm_lao_com-perf_defconfig
