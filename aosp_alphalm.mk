@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/lge/alphalm/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_alphalm
+PRODUCT_NAME := aosp_alphalm
 PRODUCT_DEVICE := alphalm
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_BRAND := LGE
@@ -30,3 +30,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="alphalm_lao_com-user 12 SKQ1.211103.001 2233316083708 release-keys"
 
 BUILD_FINGERPRINT := lge/alphalm_lao_com/alphalm:11/RKQ1.210420.001/2233318243708:user/release-keys
+
+# Gapps
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
