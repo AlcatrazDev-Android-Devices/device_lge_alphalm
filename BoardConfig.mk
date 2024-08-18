@@ -13,7 +13,8 @@ DEVICE_PATH := device/lge/alphalm
 TARGET_SCREEN_DENSITY := 560
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/lineageos_alpha_defconfig
+TARGET_KERNEL_CONFIG := vendor/alphalm_lao_com-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/sm8150-stock
 
 # Lights
 $(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(DEVICE_PATH)/include)
